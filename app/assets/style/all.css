@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -56,8 +55,6 @@ table {
 /* cssrest */
 body {
   font-family: "Roboto", "Noto Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
 }
 body h2 {
   line-height: 1.5;
@@ -76,211 +73,220 @@ body h3 {
 }
 
 .header {
-  width: 100%;
-  background-color: #650300;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .logo {
-  margin: 10px;
-}
-.header ul {
-  width: 500px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.header ul a {
-  color: white;
-  text-decoration: none;
-}
-.header ul a:link {
-  /* 設定還沒有瀏覽過的連結 */
-  text-decoration: none;
-}
-.header ul a:hover {
-  color: burlywood;
-  text-decoration: none;
-}
-
-.banner {
-  color: #650300;
-  position: relative;
-}
-.banner .ban-img {
   max-width: 100%;
-}
-.banner .banner-item {
-  position: absolute;
-  top: 300px;
-  right: 300px;
-}
-.banner .banner-item p {
-  font-size: 36px;
-  line-height: 1.5;
-}
-.banner .banner-item h1 {
-  font-size: 64px;
-  line-height: 1.5;
-  font-family: "Noto Sans TC", sans-serif;
-}
-
-/* 用專業的心，做專業的事 */
-.item1 {
-  background: #AA06010D;
-  margin: 0 auto;
-}
-.item1 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.item1 li {
-  width: 255px;
-  margin-right: 15px;
-  margin-left: 15px;
-}
-.item1 li h3 {
-  font-size: 24px;
-  line-height: 1.5;
-  color: #650300;
-  text-align: center;
-  margin-top: 16px;
-}
-.item1 li p {
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 5px;
-}
-.item1 li .im100 {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.item1 li .im100 img {
-  display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.item2_care {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 1140px;
-  margin: auto;
-}
-
-.footer {
-  background: #AA0601;
-  color: #ffffff;
-  padding: 24px 0 40px;
-}
-.footer .container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+  background-color: #AA0601;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #FFF;
-  padding-bottom: 24px;
 }
-.footer .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header .header-logo {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png") no-repeat;
+  width: 80px;
+  height: 49px;
+  margin: 30px;
+  text-indent: 101%;
+  overflow: hidden;
+  background-size: cover;
 }
-.footer .footer-nav {
-  font-size: 20px;
-  line-height: 1.5;
-  color: #ffffff;
-  padding: 20px;
-}
-.footer .footer-nav .footer-link {
-  text-decoration: none;
-  color: #ffffff;
-  display: block;
-}
-.footer .footer-nav a:hover {
-  color: burlywood;
-  text-decoration: none;
-}
-.footer .footer-contact {
-  font-size: 36px;
-  line-height: 1.5;
-  color: #ffffff;
-}
-.footer .footer-contact .footer-contacttel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 8px;
-}
-.footer .footer-contact .footer-contactimg {
-  margin-right: 8px;
-  margin-left: 10px;
-}
-.footer .footer-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.footer .footer-icon .footer-icon-img {
-  margin-left: 32px;
-}
-.footer .footer-icon a:hover {
+.header .header-logo:hover {
   opacity: 0.8;
 }
-.footer .footer-copyright {
-  max-width: 1140px;
+.header .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+.header .header-nav .header-nav-li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.header .header-nav .header-nav-li a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 30px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .header-nav {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .header-nav .header-nav-li {
+    width: 50%;
+    padding: 8px 0;
+  }
+
+  .header .header-logo {
+    width: 48px;
+    height: 29px;
+    margin: 10px auto 10px auto;
+  }
+}
+.footer {
+  background-color: #AA0601;
+  padding-top: 32px;
+  padding-bottom: 39px;
+}
+.footer .footer-content {
   margin: auto;
+  max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #fff;
-  margin-top: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.footer .footer-copyright ul {
+.footer .footer-content .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+.footer .footer-content .footer-nav-li {
+  padding-right: 50px;
+}
+.footer .footer-content .footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer .footer-content .footer-nav a:hover {
+  opacity: 0.8;
+}
+.footer .footer-content .footer-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.footer .footer-copyright ul li a {
+.footer .footer-content .footer-linkimg {
+  padding-left: 50px;
+}
+.footer .footer-content .footer-linkimg a:hover {
+  opacity: 0.8;
+}
+.footer .footer-contact {
+  max-width: 1140px;
+  margin: auto;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ffffff;
+}
+.footer .footer-contact a {
+  font-size: 36px;
+  line-height: 1.5;
   text-decoration: none;
   color: #ffffff;
-  margin-left: 48px;
-  font-size: 14px;
+  text-align: center;
+}
+.footer .footer-contact ul li img {
+  margin-right: 20px;
+  width: 36px;
+}
+.footer .footer-data {
+  max-width: 1140px;
+  margin: auto;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footer-data a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+}
+.footer .footer-data ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .footer-data ul li {
+  padding-left: 48px;
+}
+.footer .footer-data ul li a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .footer .footer-content .footer-nav {
+    display: none;
+  }
+
+  .footer .footer-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer-data .Copyright {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.faq {
+  width: 947px;
+  margin: auto;
+}
+
+.faq-h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-left: 20px;
+  margin-top: 60px;
+  border-left: 8px solid #9F1213;
+}
+
+.faq-h3 {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-top: 60px;
+  padding-bottom: 36px;
+}
+
+.faq-h4 {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.faq-h4 li p {
+  font-size: 16px;
+  padding-left: 95px;
+  margin-bottom: 32px;
 }
