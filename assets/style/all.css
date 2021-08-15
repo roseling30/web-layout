@@ -212,7 +212,7 @@ body {
     line-height: 1.5; } }
 
 .faq {
-  width: 947px;
+  max-width: 947px;
   margin: auto; }
 
 .faq-h2 {
