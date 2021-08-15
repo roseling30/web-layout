@@ -258,7 +258,7 @@ body h3 {
   }
 }
 .faq {
-  width: 947px;
+  max-width: 947px;
   margin: auto;
 }
 
