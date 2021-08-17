@@ -1,31 +1,200 @@
 .faq{
     max-width: 947px;
     margin: auto;
+    .faq-h2{
+        font-size: 48px;
+        font-weight:bold;
+        line-height: 1.5;
+        padding-left: 20px;
+        margin-top: 60px;
+    border-left: 8px solid #9F1213;    
+    }
+    .faq-h3{
+        font-size: 32px;
+        line-height: 1.5;
+        font-weight:bold;
+        padding-top: 60px;
+        padding-bottom: 36px;
+        }
+    .faq-h4{
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight:bold;
+    }
+    .faq-h4 li p{
+        font-size: 16px;
+        padding-left: 95px;
+        margin-bottom: 32px;
+    }
     
 }
-.faq-h2{
-    font-size: 48px;
-    font-weight:bold;
-    line-height: 1.5;
-    padding-left: 20px;
-    margin-top: 60px;
-border-left: 8px solid #9F1213;    
-}
-.faq-h3{
-    font-size: 32px;
-    line-height: 1.5;
-    font-weight:bold;
-    padding-top: 60px;
-    padding-bottom: 36px;
+.blog-header{
+    background-color: #650300;
+     }
+
+.blog-link
+{
+  max-width: 1110px;
+  margin: auto;
+  display: flex;
+        justify-content:space-between;
+  align-self: center;
+  padding: 10px 0 10px 0;
+  
+         }
+
+.blog-nav{
+    display: flex;}
+
+    .blog-nav-list a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: #fff;
+        padding-right: 20px;
     }
-.faq-h4{
-    font-size: 20px;
-    line-height: 1.5;
-    font-weight:bold;
+    .blog-nav-list a:hover{
+        opacity: 0.8;
+    }  
+    .blog-search{
+        display: flex;
+        .button{
+            padding-left: 10px;
+            align-self: center;
+        }
+        .button a:hover{
+            opacity: 0.6;
+        }
+    }
+
+
+        
+
+.blog-content{
+    max-width: 60%;
+    margin: auto;
+
+    .blog-card{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;     
+    }
+    
+
+    .blog-img{
+        max-width:100%;
+    }
+
+    .blogcard-item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    
+    .blogcard-h3{
+        font-size: 32px;
+        font-weight: bolder;
+        line-height: 1.5;
+        color: #650300;
+    }
+    .blogcard-h4{
+        font-size: 20px;
+        line-height: 1.5;
+        color: #000000;
+    }
+    .blogcard-h4-date{
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: bold;
+        color: #000000;
+    }
+    .blog-care-data{
+        width: 500px;
+       
+    }
+    .blog-care-data p{
+        font-size: 20px;
+        line-height: 1.5;
+        color: #555555;
+    }
+    .blogcare-link{
+        text-align: right;
+        
+    }
+    .blogcare-link a{
+      font-size: 36px;
+      line-height: 1.5;
+      font-weight: bolder;
+      text-decoration: none;
+      text-align: right;
+      color: #650300; 
+        
+    }
+    .blogcare-link a:hover{
+        opacity: 0.8;
+    }
+    
+    
+    
+    .blog-card-img{
+        width: 635px;
+        height: 400px;
+    }
+    .blog-card-img a:hover{
+        opacity: 0.8;
+    }
+    
 }
-.faq-h4 li p{
-    font-size: 16px;
-    padding-left: 95px;
-    margin-bottom: 32px;
+
+.page123{
+    margin-top: 100px;
+    margin-bottom:150px ;
+    .pagelist{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagelist li{
+        font-size: 18px;
+        line-height: 1.5;
+        border: 1px solid #555555;
+    }
+    .pagelist-number{
+        width: 42px;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+        
+    }
+    
+    .pagelist-number a{
+        display: block;
+        color: #555555;
+        text-decoration: none;
+        padding: 10px;
+            
+    }
+    
+    .pagelist-number a:hover{
+     color: #fff;
+     background-color: #000000;
+                  
+    }
+
+    .pagelist-up{
+     text-align: center;
+    }
+    .pagelist-up a{
+     display: block;
+     text-decoration: none;
+     color: #555555;
+     padding: 10px;
+    }
+    
+     .pagelist-up a:hover{
+         background-color: #F2F2F2;
+    }
 
 }
