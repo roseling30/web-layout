@@ -287,19 +287,57 @@ body {
   .blog-search .button a:hover {
     opacity: 0.6; }
 
+.blog-content-allcard {
+  border: 1px solid #831111; }
+
+.blog-card {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px; }
+
 .blog-content {
-  max-width: 60%;
+  max-width: 1110px;
   margin: auto; }
-  .blog-content .blog-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 60px; }
-  .blog-content .blog-img {
-    max-width: 100%; }
+  .blog-content .img01 {
+    width: 635px;
+    height: 400px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-1.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .blog-content .img02 {
+    width: 635px;
+    height: 400px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-2.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .blog-content .img03 {
+    width: 635px;
+    height: 400px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-3.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .blog-content .img04 {
+    width: 635px;
+    height: 400px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-4.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .blog-content .img05 {
+    width: 635px;
+    height: 400px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-5.png?raw=true");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .blog-content .blog-care-data {
+    max-width: 42%;
+    padding-left: 1%; }
   .blog-content .blogcard-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -307,6 +345,9 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 24px; }
   .blog-content .blogcard-h3 {
     font-size: 32px;
@@ -322,8 +363,6 @@ body {
     line-height: 1.5;
     font-weight: bold;
     color: #000000; }
-  .blog-content .blog-care-data {
-    width: 500px; }
   .blog-content .blog-care-data p {
     font-size: 20px;
     line-height: 1.5;
@@ -338,11 +377,6 @@ body {
     text-align: right;
     color: #650300; }
   .blog-content .blogcare-link a:hover {
-    opacity: 0.8; }
-  .blog-content .blog-card-img {
-    width: 635px;
-    height: 400px; }
-  .blog-content .blog-card-img a:hover {
     opacity: 0.8; }
 
 .page123 {
@@ -384,5 +418,9 @@ body {
     padding: 10px; }
   .page123 .pagelist-up a:hover {
     background-color: #F2F2F2; }
+
+.store-wrap {
+  max-width: 1110px;
+  margin: auto; }
 
 /*# sourceMappingURL=all.css.map */
