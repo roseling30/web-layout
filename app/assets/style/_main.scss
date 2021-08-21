@@ -68,28 +68,84 @@
         }
     }
 
-
+.blog-content-allcard{
+    border: 1px solid rgb(131, 17, 17);
+    // flex-direction: column;
+}
+    .blog-card{
+        margin: auto;
+        display: flex;
+        margin-bottom: 60px;
         
+             
+    }    
 
 .blog-content{
-    max-width: 60%;
+    max-width: 1110px;
     margin: auto;
-
-    .blog-card{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 60px;     
+        
+    .img01{
+      width: 635px;
+      height: 400px;
+      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-1.png?raw=true");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
     }
-    
 
-    .blog-img{
-        max-width:100%;
+    .img02{
+        width: 635px;
+        height: 400px;
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-2.png?raw=true");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+
+      .img03{
+        width: 635px;
+        height: 400px;
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-3.png?raw=true");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+
+      .img04{
+        width: 635px;
+        height: 400px;
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-4.png?raw=true");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+
+      .img05{
+        width: 635px;
+        height: 400px;
+        background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-5.png?raw=true");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+    
+    .blog-care-data{
+        max-width: 42%;
+        padding-left: 1%;
+         
     }
 
     .blogcard-item{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-bottom: 24px;
+        
     }
     
     .blogcard-h3{
@@ -97,6 +153,7 @@
         font-weight: bolder;
         line-height: 1.5;
         color: #650300;
+        
     }
     .blogcard-h4{
         font-size: 20px;
@@ -109,10 +166,7 @@
         font-weight: bold;
         color: #000000;
     }
-    .blog-care-data{
-        width: 500px;
-       
-    }
+    
     .blog-care-data p{
         font-size: 20px;
         line-height: 1.5;
@@ -135,15 +189,8 @@
         opacity: 0.8;
     }
     
+     
     
-    
-    .blog-card-img{
-        width: 635px;
-        height: 400px;
-    }
-    .blog-card-img a:hover{
-        opacity: 0.8;
-    }
     
 }
 

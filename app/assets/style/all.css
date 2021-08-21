@@ -349,21 +349,32 @@ body h3 {
   opacity: 0.6;
 }
 
-.blog-content {
-  max-width: 60%;
-  margin: auto;
-}
-.blog-content .blog-card {
+.blog-card {
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 60px;
+  border: 1px solid #2528c0;
+}
+
+.blog-content {
+  margin: auto;
 }
 .blog-content .blog-img {
-  max-width: 100%;
+  max-width: 30%;
+}
+.blog-content .img01 {
+  height: 200px;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-1.png?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #000;
+}
+.blog-content .blog-care-data {
+  max-width: 50%;
+  border: 1px solid #d44343;
 }
 .blog-content .blogcard-item {
   display: -webkit-box;
@@ -372,7 +383,11 @@ body h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 24px;
+  border: 1px solid #000;
 }
 .blog-content .blogcard-h3 {
   font-size: 32px;
@@ -390,9 +405,6 @@ body h3 {
   line-height: 1.5;
   font-weight: bold;
   color: #000000;
-}
-.blog-content .blog-care-data {
-  width: 500px;
 }
 .blog-content .blog-care-data p {
   font-size: 20px;
@@ -413,7 +425,7 @@ body h3 {
 .blog-content .blogcare-link a:hover {
   opacity: 0.8;
 }
-.blog-content .blog-card-img {
+.blog-content .blog-card-img a {
   width: 635px;
   height: 400px;
 }
