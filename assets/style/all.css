@@ -47,7 +47,7 @@ table {
 
 /* cssrest */
 body {
-  font-family: 'Roboto', 'Noto Sans', sans-serif; }
+  font-family: 'Roboto', 'Noto Sans', sans-serif,'Tangerine', serif; }
   body h2 {
     line-height: 1.5;
     font-size: 48px;
@@ -69,155 +69,168 @@ body {
     color: #AA0601;
     font-weight: bold;
     font-style: italic; }
-
-.header {
-  max-width: 100%;
-  background-color: #AA0601;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .header .header-logo {
-    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png") no-repeat;
-    width: 80px;
-    height: 49px;
-    margin: 30px;
-    text-indent: 101%;
-    overflow: hidden;
-    background-size: cover; }
-  .header .header-logo:hover {
-    opacity: 0.8; }
-  .header .header-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 20px; }
-    .header .header-nav .header-nav-li a {
-      text-decoration: none;
-      color: #ffffff;
-      padding-right: 20px;
-      padding-left: 20px; }
-    .header .header-nav .header-nav-li a:hover {
-      opacity: 0.8; }
-
-@media (max-width: 992px) {
-  .header {
-    padding: 30px 40px; } }
-
-@media (max-width: 767px) {
-  .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    padding: 0; }
-  .header-nav {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .header-nav .header-nav-li {
-    width: 50%;
-    padding: 8px 0; }
-  .header .header-logo {
-    width: 48px;
-    height: 29px;
-    margin: 10px auto 10px auto; } }
-
-.footer {
-  background-color: #AA0601;
-  padding-top: 32px;
-  padding-bottom: 39px; }
-  .footer .footer-content {
-    margin: auto;
-    max-width: 1140px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .footer .footer-content .footer-nav {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-bottom: 40px; }
-    .footer .footer-content .footer-nav-li {
-      padding-right: 50px; }
-    .footer .footer-content .footer-nav a {
-      color: #ffffff;
-      text-decoration: none; }
-    .footer .footer-content .footer-nav a:hover {
-      opacity: 0.8; }
-    .footer .footer-content .footer-link {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .footer .footer-content .footer-linkimg {
-      padding-left: 50px; }
-    .footer .footer-content .footer-linkimg a:hover {
-      opacity: 0.8; }
-  .footer .footer-contact {
-    max-width: 1140px;
-    margin: auto;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #ffffff; }
-  .footer .footer-contact a {
-    font-size: 36px;
-    line-height: 1.5;
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center; }
-  .footer .footer-contact ul li img {
-    margin-right: 20px;
-    width: 36px; }
-  .footer .footer-data {
-    max-width: 1140px;
-    margin: auto;
-    color: #ffffff;
-    font-size: 12px;
-    margin-top: 24px;
+  body h4 {
+    font-size: 24px;
+    line-height: 2;
+    font-weight: bold; }
+  body .header {
+    max-width: 100%;
+    background-color: #AA0601;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .footer .footer-data a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 12px; }
-  .footer .footer-data ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .footer .footer-data ul li {
-      padding-left: 48px; }
-    .footer .footer-data ul li a:hover {
+    body .header .header-logo {
+      background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png") no-repeat;
+      width: 80px;
+      height: 49px;
+      margin: 30px;
+      text-indent: 101%;
+      overflow: hidden;
+      background-size: cover; }
+    body .header .header-logo:hover {
       opacity: 0.8; }
+    body .header .header-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 20px; }
+      body .header .header-nav .header-nav-li a {
+        text-decoration: none;
+        color: #ffffff;
+        padding-right: 20px;
+        padding-left: 20px; }
+      body .header .header-nav .header-nav-li a:hover {
+        opacity: 0.8; }
+  @media (max-width: 992px) {
+    body .header {
+      padding: 30px 40px; } }
+  @media (max-width: 767px) {
+    body .header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: center;
+      padding: 0; }
+    body .header-nav {
+      width: 100%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    body .header-nav .header-nav-li {
+      width: 50%;
+      padding: 8px 0;
+      border: 1px solid #fff; }
+    body .header .header-logo {
+      width: 48px;
+      height: 29px;
+      margin: 10px auto 10px auto; } }
+  body .footer {
+    background-color: #AA0601;
+    padding-top: 32px;
+    padding-bottom: 39px; }
+    body .footer .footer-content {
+      margin: auto;
+      max-width: 1140px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      body .footer .footer-content .footer-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 40px; }
+      body .footer .footer-content .footer-nav-li {
+        padding-right: 50px; }
+      body .footer .footer-content .footer-nav a {
+        color: #ffffff;
+        text-decoration: none; }
+      body .footer .footer-content .footer-nav a:hover {
+        opacity: 0.8; }
+      body .footer .footer-content .footer-link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      body .footer .footer-content .footer-linkimg {
+        padding-left: 50px; }
+      body .footer .footer-content .footer-linkimg a:hover {
+        opacity: 0.8; }
+    body .footer .footer-contact {
+      max-width: 1140px;
+      margin: auto;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #ffffff; }
+    body .footer .footer-contact a {
+      font-size: 36px;
+      line-height: 1.5;
+      text-decoration: none;
+      color: #ffffff;
+      text-align: center; }
+    body .footer .footer-contact ul li img {
+      margin-right: 20px;
+      width: 36px; }
+    body .footer .footer-data {
+      max-width: 1140px;
+      margin: auto;
+      color: #ffffff;
+      font-size: 12px;
+      margin-top: 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    body .footer .footer-data a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 12px; }
+    body .footer .footer-data ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      body .footer .footer-data ul li {
+        padding-left: 48px; }
+      body .footer .footer-data ul li a:hover {
+        opacity: 0.8; }
+  @media (max-width: 767px) {
+    body .footer .footer-content .footer-nav {
+      display: none; }
+    body .footer .footer-data {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    body .footer-data .Copyright {
+      font-size: 16px;
+      line-height: 1.5; } }
 
-@media (max-width: 767px) {
-  .footer .footer-content .footer-nav {
-    display: none; }
-  .footer .footer-data {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .footer-data .Copyright {
-    font-size: 16px;
-    line-height: 1.5; } }
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px; } }
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px; } }
 
 .faq {
   max-width: 947px;
@@ -335,6 +348,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+  .blog-content .blog-card {
+    border: 1px solid #b62323; }
   .blog-content .blog-care-data {
     max-width: 42%;
     padding-left: 1%; }
@@ -419,8 +434,70 @@ body {
   .page123 .pagelist-up a:hover {
     background-color: #F2F2F2; }
 
-.store-wrap {
-  max-width: 1110px;
-  margin: auto; }
+.choose {
+  margin-bottom: 30px; }
+
+.store-item-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.store-team {
+  width: 350px;
+  border: 1px solid #00000020;
+  margin-bottom: 20px;
+  margin-right: 25px; }
+  .store-team .store-title {
+    width: 350px;
+    margin: auto;
+    border-bottom: 1px solid #00000020; }
+  .store-team .store-h4 {
+    font-size: 24px;
+    line-height: 2;
+    color: #212529;
+    padding-left: 20px; }
+  .store-team a {
+    display: block;
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: black;
+    padding: 20px;
+    text-align: center; }
+  .store-team a:hover {
+    color: #fff;
+    background-color: #41414b; }
+
+.store-img01 {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true) no-repeat center;
+  background-size: cover;
+  height: 224px; }
+
+.store-img02 {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate2.jpg?raw=true) no-repeat center;
+  background-size: cover;
+  height: 224px; }
+
+.store-img03 {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate3.jpg?raw=true) no-repeat center;
+  background-size: cover;
+  height: 224px; }
+
+.itme-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  margin: auto;
+  padding: 10px 20px; }
+  .itme-data p {
+    font-size: 20px;
+    line-height: 1.5; }
 
 /*# sourceMappingURL=all.css.map */
