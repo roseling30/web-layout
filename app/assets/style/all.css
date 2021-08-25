@@ -54,7 +54,7 @@ table {
 
 /* cssrest */
 body {
-  font-family: "Roboto", "Noto Sans", sans-serif;
+  font-family: "Roboto", "Noto Sans", sans-serif, "Tangerine", serif;
 }
 body h2 {
   line-height: 1.5;
@@ -80,8 +80,12 @@ body h3 {
   font-weight: bold;
   font-style: italic;
 }
-
-.header {
+body h4 {
+  font-size: 24px;
+  line-height: 2;
+  font-weight: bold;
+}
+body .header {
   max-width: 100%;
   background-color: #AA0601;
   display: -webkit-box;
@@ -91,7 +95,7 @@ body h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header .header-logo {
+body .header .header-logo {
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png") no-repeat;
   width: 80px;
   height: 49px;
@@ -100,10 +104,10 @@ body h3 {
   overflow: hidden;
   background-size: cover;
 }
-.header .header-logo:hover {
+body .header .header-logo:hover {
   opacity: 0.8;
 }
-.header .header-nav {
+body .header .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,23 +116,22 @@ body h3 {
           align-items: center;
   font-size: 20px;
 }
-.header .header-nav .header-nav-li a {
+body .header .header-nav .header-nav-li a {
   text-decoration: none;
   color: #ffffff;
   padding-right: 20px;
   padding-left: 20px;
 }
-.header .header-nav .header-nav-li a:hover {
+body .header .header-nav .header-nav-li a:hover {
   opacity: 0.8;
 }
-
 @media (max-width: 992px) {
-  .header {
+  body .header {
     padding: 30px 40px;
   }
 }
 @media (max-width: 767px) {
-  .header {
+  body .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -136,8 +139,7 @@ body h3 {
     text-align: center;
     padding: 0;
   }
-
-  .header-nav {
+  body .header-nav {
     width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -145,24 +147,23 @@ body h3 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-
-  .header-nav .header-nav-li {
+  body .header-nav .header-nav-li {
     width: 50%;
     padding: 8px 0;
+    border: 1px solid #fff;
   }
-
-  .header .header-logo {
+  body .header .header-logo {
     width: 48px;
     height: 29px;
     margin: 10px auto 10px auto;
   }
 }
-.footer {
+body .footer {
   background-color: #AA0601;
   padding-top: 32px;
   padding-bottom: 39px;
 }
-.footer .footer-content {
+body .footer .footer-content {
   margin: auto;
   max-width: 1140px;
   display: -webkit-box;
@@ -175,51 +176,51 @@ body h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.footer .footer-content .footer-nav {
+body .footer .footer-content .footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
 }
-.footer .footer-content .footer-nav-li {
+body .footer .footer-content .footer-nav-li {
   padding-right: 50px;
 }
-.footer .footer-content .footer-nav a {
+body .footer .footer-content .footer-nav a {
   color: #ffffff;
   text-decoration: none;
 }
-.footer .footer-content .footer-nav a:hover {
+body .footer .footer-content .footer-nav a:hover {
   opacity: 0.8;
 }
-.footer .footer-content .footer-link {
+body .footer .footer-content .footer-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.footer .footer-content .footer-linkimg {
+body .footer .footer-content .footer-linkimg {
   padding-left: 50px;
 }
-.footer .footer-content .footer-linkimg a:hover {
+body .footer .footer-content .footer-linkimg a:hover {
   opacity: 0.8;
 }
-.footer .footer-contact {
+body .footer .footer-contact {
   max-width: 1140px;
   margin: auto;
   padding-bottom: 24px;
   border-bottom: 1px solid #ffffff;
 }
-.footer .footer-contact a {
+body .footer .footer-contact a {
   font-size: 36px;
   line-height: 1.5;
   text-decoration: none;
   color: #ffffff;
   text-align: center;
 }
-.footer .footer-contact ul li img {
+body .footer .footer-contact ul li img {
   margin-right: 20px;
   width: 36px;
 }
-.footer .footer-data {
+body .footer .footer-data {
   max-width: 1140px;
   margin: auto;
   color: #ffffff;
@@ -232,38 +233,52 @@ body h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.footer .footer-data a {
+body .footer .footer-data a {
   color: #ffffff;
   text-decoration: none;
   font-size: 12px;
 }
-.footer .footer-data ul {
+body .footer .footer-data ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.footer .footer-data ul li {
+body .footer .footer-data ul li {
   padding-left: 48px;
 }
-.footer .footer-data ul li a:hover {
+body .footer .footer-data ul li a:hover {
   opacity: 0.8;
 }
-
 @media (max-width: 767px) {
-  .footer .footer-content .footer-nav {
+  body .footer .footer-content .footer-nav {
     display: none;
   }
-
-  .footer .footer-data {
+  body .footer .footer-data {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
-  .footer-data .Copyright {
+  body .footer-data .Copyright {
     font-size: 16px;
     line-height: 1.5;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
   }
 }
 .faq {
@@ -349,32 +364,68 @@ body h3 {
   opacity: 0.6;
 }
 
+.blog-content-allcard {
+  border: 1px solid #831111;
+}
+
 .blog-card {
-  height: 500px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
-  border: 1px solid #2528c0;
 }
 
 .blog-content {
+  max-width: 1110px;
   margin: auto;
 }
-.blog-content .blog-img {
-  max-width: 30%;
-}
 .blog-content .img01 {
-  height: 200px;
+  width: 635px;
+  height: 400px;
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-1.png?raw=true");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid #000;
+}
+.blog-content .img02 {
+  width: 635px;
+  height: 400px;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-2.png?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-content .img03 {
+  width: 635px;
+  height: 400px;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-3.png?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-content .img04 {
+  width: 635px;
+  height: 400px;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-4.png?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-content .img05 {
+  width: 635px;
+  height: 400px;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/blog-5.png?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-content .blog-card {
+  border: 1px solid #b62323;
 }
 .blog-content .blog-care-data {
-  max-width: 50%;
-  border: 1px solid #d44343;
+  max-width: 42%;
+  padding-left: 1%;
 }
 .blog-content .blogcard-item {
   display: -webkit-box;
@@ -387,7 +438,6 @@ body h3 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 24px;
-  border: 1px solid #000;
 }
 .blog-content .blogcard-h3 {
   font-size: 32px;
@@ -423,13 +473,6 @@ body h3 {
   color: #650300;
 }
 .blog-content .blogcare-link a:hover {
-  opacity: 0.8;
-}
-.blog-content .blog-card-img a {
-  width: 635px;
-  height: 400px;
-}
-.blog-content .blog-card-img a:hover {
   opacity: 0.8;
 }
 
@@ -480,4 +523,82 @@ body h3 {
 }
 .page123 .pagelist-up a:hover {
   background-color: #F2F2F2;
+}
+
+.choose {
+  margin-bottom: 30px;
+}
+
+.store-item-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.store-team {
+  width: 350px;
+  border: 1px solid #00000020;
+  margin-bottom: 20px;
+  margin-right: 25px;
+}
+.store-team .store-title {
+  width: 350px;
+  margin: auto;
+  border-bottom: 1px solid #00000020;
+}
+.store-team .store-h4 {
+  font-size: 24px;
+  line-height: 2;
+  color: #212529;
+  padding-left: 20px;
+}
+.store-team a {
+  display: block;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.store-team a:hover {
+  color: #fff;
+  background-color: #41414b;
+}
+
+.store-img01 {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate1.jpeg?raw=true) no-repeat center;
+  background-size: cover;
+  height: 224px;
+}
+
+.store-img02 {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate2.jpg?raw=true) no-repeat center;
+  background-size: cover;
+  height: 224px;
+}
+
+.store-img03 {
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/locate3.jpg?raw=true) no-repeat center;
+  background-size: cover;
+  height: 224px;
+}
+
+.itme-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  margin: auto;
+  padding: 10px 20px;
+}
+.itme-data p {
+  font-size: 20px;
+  line-height: 1.5;
 }
